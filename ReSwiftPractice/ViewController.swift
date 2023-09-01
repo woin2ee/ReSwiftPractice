@@ -7,13 +7,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+final class ViewController: UIViewController {
+    
+    @IBAction func didTapLoginButton(_ sender: UIButton) {
+        self.present(TestViewController(), animated: true)
     }
-
-
+    
 }
-

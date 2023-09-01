@@ -5,15 +5,18 @@
 //  Created by Jaewon Yun on 2023/09/01.
 //
 
+import ReSwift
 import UIKit
+
+var store: Store<AppState>!
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        store = .init(reducer: appReducer, state: nil)
+        
         return true
     }
 

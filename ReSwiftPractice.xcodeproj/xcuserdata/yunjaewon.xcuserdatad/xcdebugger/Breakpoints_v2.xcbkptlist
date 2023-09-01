@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "41F40DFD-77FB-411B-905F-5D127E9F30D4"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6BCF5BB5-CDF0-4464-82EC-DAF7D5DCF69C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Library/Developer/Xcode/DerivedData/ReSwiftPractice-eqkpxdumztrdccesbxnyhowtempn/SourcePackages/checkouts/ReSwift/ReSwift/CoreTypes/Store.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "state"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "6BCF5BB5-CDF0-4464-82EC-DAF7D5DCF69C - f0444525c9f25e9d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ReSwift.Store.state.didset : Swift.Optional&lt;&#x3c4;_0_0&gt;"
+                  moduleName = "ReSwiftPractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yunjaewon/Library/Developer/Xcode/DerivedData/ReSwiftPractice-eqkpxdumztrdccesbxnyhowtempn/SourcePackages/checkouts/ReSwift/ReSwift/CoreTypes/Store.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  uuid = "6BCF5BB5-CDF0-4464-82EC-DAF7D5DCF69C - 4fd76f0c21fafb3f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (ReSwift.SubscriptionBox&lt;&#x3c4;_0_0&gt;) -&gt; () in ReSwift.Store.state.didset : Swift.Optional&lt;&#x3c4;_0_0&gt;"
+                  moduleName = "ReSwiftPractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yunjaewon/Library/Developer/Xcode/DerivedData/ReSwiftPractice-eqkpxdumztrdccesbxnyhowtempn/SourcePackages/checkouts/ReSwift/ReSwift/CoreTypes/Store.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "216">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

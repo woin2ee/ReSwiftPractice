@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA1CB37F2AA2401D001A1C09 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1CB37E2AA2401D001A1C09 /* TestViewController.swift */; };
 		DA4623F82AA21808007D00DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4623F72AA21808007D00DE /* AppDelegate.swift */; };
 		DA4623FA2AA21808007D00DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4623F92AA21808007D00DE /* SceneDelegate.swift */; };
 		DA4623FC2AA21808007D00DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4623FB2AA21808007D00DE /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 		DA46240F2AA21809007D00DE /* ReSwiftPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA46240E2AA21809007D00DE /* ReSwiftPracticeTests.swift */; };
 		DA4624192AA21809007D00DE /* ReSwiftPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4624182AA21809007D00DE /* ReSwiftPracticeUITests.swift */; };
 		DA46241B2AA21809007D00DE /* ReSwiftPracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA46241A2AA21809007D00DE /* ReSwiftPracticeUITestsLaunchTests.swift */; };
+		DA4624292AA21B30007D00DE /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DA4624282AA21B30007D00DE /* ReSwift */; };
+		DA46242C2AA22116007D00DE /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA46242B2AA22116007D00DE /* AppState.swift */; };
+		DA46242E2AA2274B007D00DE /* AuthenticationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA46242D2AA2274B007D00DE /* AuthenticationState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA1CB37E2AA2401D001A1C09 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		DA4623F42AA21808007D00DE /* ReSwiftPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReSwiftPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4623F72AA21808007D00DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA4623F92AA21808007D00DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +54,8 @@
 		DA4624142AA21809007D00DE /* ReSwiftPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReSwiftPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4624182AA21809007D00DE /* ReSwiftPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReSwiftPracticeUITests.swift; sourceTree = "<group>"; };
 		DA46241A2AA21809007D00DE /* ReSwiftPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReSwiftPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DA46242B2AA22116007D00DE /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		DA46242D2AA2274B007D00DE /* AuthenticationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA4624292AA21B30007D00DE /* ReSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +107,11 @@
 		DA4623F62AA21808007D00DE /* ReSwiftPractice */ = {
 			isa = PBXGroup;
 			children = (
+				DA46242A2AA22103007D00DE /* State */,
 				DA4623F72AA21808007D00DE /* AppDelegate.swift */,
 				DA4623F92AA21808007D00DE /* SceneDelegate.swift */,
 				DA4623FB2AA21808007D00DE /* ViewController.swift */,
+				DA1CB37E2AA2401D001A1C09 /* TestViewController.swift */,
 				DA4623FD2AA21808007D00DE /* Main.storyboard */,
 				DA4624002AA21809007D00DE /* Assets.xcassets */,
 				DA4624022AA21809007D00DE /* LaunchScreen.storyboard */,
@@ -127,6 +137,15 @@
 			path = ReSwiftPracticeUITests;
 			sourceTree = "<group>";
 		};
+		DA46242A2AA22103007D00DE /* State */ = {
+			isa = PBXGroup;
+			children = (
+				DA46242B2AA22116007D00DE /* AppState.swift */,
+				DA46242D2AA2274B007D00DE /* AuthenticationState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +162,9 @@
 			dependencies = (
 			);
 			name = ReSwiftPractice;
+			packageProductDependencies = (
+				DA4624282AA21B30007D00DE /* ReSwift */,
+			);
 			productName = ReSwiftPractice;
 			productReference = DA4623F42AA21808007D00DE /* ReSwiftPractice.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +237,9 @@
 				Base,
 			);
 			mainGroup = DA4623EB2AA21808007D00DE;
+			packageReferences = (
+				DA4624272AA21B30007D00DE /* XCRemoteSwiftPackageReference "ReSwift" */,
+			);
 			productRefGroup = DA4623F52AA21808007D00DE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,6 +286,9 @@
 				DA4623FC2AA21808007D00DE /* ViewController.swift in Sources */,
 				DA4623F82AA21808007D00DE /* AppDelegate.swift in Sources */,
 				DA4623FA2AA21808007D00DE /* SceneDelegate.swift in Sources */,
+				DA46242C2AA22116007D00DE /* AppState.swift in Sources */,
+				DA1CB37F2AA2401D001A1C09 /* TestViewController.swift in Sources */,
+				DA46242E2AA2274B007D00DE /* AuthenticationState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,6 +630,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DA4624272AA21B30007D00DE /* XCRemoteSwiftPackageReference "ReSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReSwift/ReSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DA4624282AA21B30007D00DE /* ReSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA4624272AA21B30007D00DE /* XCRemoteSwiftPackageReference "ReSwift" */;
+			productName = ReSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DA4623EC2AA21808007D00DE /* Project object */;
 }
